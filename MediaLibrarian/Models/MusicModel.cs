@@ -15,8 +15,13 @@ namespace MediaLibrarian.Models
         public string StyleOne { get; set; }
         public string? StyleTwo { get; set; }
         public string? StyleThree { get; set; }
-        [Range(1900, 2023)]
-        public int ReleaseYear { get; set; }
+        [Required]
+        public DateTime ReleaseDate { get; set; }
+        [Required]
+        public string Label { get; set; }
+        [Required]
+        [Range(1.0, 10.0)]
+        public float UserRating { get; set; }
         [Required]
         public string Image { get; set; }
     }

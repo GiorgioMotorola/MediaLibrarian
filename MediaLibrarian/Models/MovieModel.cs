@@ -21,15 +21,14 @@ namespace MediaLibrarian.Models
         [Range(1.0, 10.0)]
         public float UserRating { get; set; }
         [Required]
-        public string Plot { get; set; }
+        public string Description { get; set; }
         public MPAARatingCategory MPAA { get; set; }
         [MaxLength(2)]
         public string RunTimeHours { get; set; }
         [MaxLength(2)]
         public string RunTimeMinutes { get; set; }
-        [Range(1900, 2023)]
         [Required]
-        public int ReleaseYear { get; set; }
+        public DateTime ReleaseDate { get; set; }
         [Required]
         public string Image { get; set; }
     }
