@@ -21,6 +21,8 @@ namespace MediaLibrarian.Models
         public float UserRating { get; set; }
         [Required]
         public ESRBRatingCategory ESRB { get; set; }
+
+
         [Required]
         public VideoGameGenreCategory Genre { get; set; }
         public string? GenreTwo { get; set; }
