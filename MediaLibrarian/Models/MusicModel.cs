@@ -14,9 +14,10 @@ namespace MediaLibrarian.Models
         public DateTime ReleaseDate { get; set; }
         [Required]
         public string Label { get; set; }
+
         [Required]
-        [Range(1.0, 10.0)]
-        public float UserRating { get; set; }
+        [Range(0, 100)]
+        public int UserRating { get; set; }
 
 
         [Required]

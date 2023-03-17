@@ -14,19 +14,19 @@ namespace MediaLibrarian.Models
         public string Director { get; set; }
         [Required]
         public string Writer { get; set; }
-        
-        [Range(1.0, 10.0)]
-        public float UserRating { get; set; }
+        [Required]
+        [Range(0, 100)]
+        public int UserRating { get; set; }
         [Required]
         public string Description { get; set; }
         [Required]
         public MPAARatingCategory MPAA { get; set; }
         [MaxLength(2)]
-        public string RunTimeHours { get; set; }
+        public int RunTimeHours { get; set; }
         [MaxLength(2)]
-        public string RunTimeMinutes { get; set; }
+        public int RunTimeMinutes { get; set; }
         [Required]
-        public DateTime ReleaseDate { get; set; }
+        public string ReleaseDate { get; set; }
 
 
         [Required]

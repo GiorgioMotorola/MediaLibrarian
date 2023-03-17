@@ -12,9 +12,9 @@ namespace MediaLibrarian.Models
         public string Description { get; set; }
         [Required]
         public string Writer { get; set; }
-
-        [Range(1.0, 10.0)]
-        public float UserRating { get; set; }
+        [Required]
+        [Range(0, 100)]
+        public int UserRating { get; set; }
         [Required]
         public DateTime ReleaseDate { get; set; }
 

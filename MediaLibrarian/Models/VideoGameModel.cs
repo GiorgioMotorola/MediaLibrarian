@@ -17,8 +17,8 @@ namespace MediaLibrarian.Models
         [Required]
         public string Platform { get; set; }
         [Required]
-        [Range(1.0, 10.0)]
-        public float UserRating { get; set; }
+        [Range(0, 100)]
+        public int UserRating { get; set; }
         [Required]
         public ESRBRatingCategory ESRB { get; set; }
 
