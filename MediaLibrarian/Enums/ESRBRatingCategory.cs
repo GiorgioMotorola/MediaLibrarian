@@ -14,7 +14,7 @@ namespace MediaLibrarian.Enums
         [Display(Name = "A")]
         A,
         [Display(Name = "RP")]
-        P
+        RP
 
     }
 }

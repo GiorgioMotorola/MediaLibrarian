@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MediaLibrarian.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace MediaLibrarian.Models
 {
@@ -14,7 +15,7 @@ namespace MediaLibrarian.Models
         [Required]
         public string Writer { get; set; }
         [Required]
-        public string GenreOne { get; set; }
+        public TelevisionGenreCategory Genre { get; set; }
         public string? GenreTwo { get; set; }
         public string? GenreThree { get; set; }
         [Range(1.0, 10.0)]

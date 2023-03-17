@@ -22,7 +22,7 @@ namespace MediaLibrarian.Models
         [Required]
         public ESRBRatingCategory ESRB { get; set; }
         [Required]
-        public string GenreOne { get; set; }
+        public VideoGameGenreCategory Genre { get; set; }
         public string? GenreTwo { get; set; }
         public string? GenreThree { get; set; }
         [Required]

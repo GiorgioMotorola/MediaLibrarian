@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MediaLibrarian.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace MediaLibrarian.Models
 {
@@ -10,11 +11,9 @@ namespace MediaLibrarian.Models
         [Required]
         public string AlbumName { get; set; }
         [Required]
-        public string Genre { get; set; }
-        [Required]
-        public string StyleOne { get; set; }
-        public string? StyleTwo { get; set; }
-        public string? StyleThree { get; set; }
+        public MusicGenreCategory Genre { get; set; }
+        public string? GenreTwo { get; set; }
+        public string? GenreThree { get; set; }
         [Required]
         public DateTime ReleaseDate { get; set; }
         [Required]
