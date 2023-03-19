@@ -247,15 +247,438 @@ namespace MediaLibrarian.Data
                             Genre = Enums.MusicGenreCategory.Rock,
                             GenreTwo = "Alternative Rock",
                             GenreThree = "Punk",
-                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/Tusk.jpg",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/LetItBe.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "2814",
+                            AlbumName = "新しい日の誕生",
+                            ReleaseDate = "January 21, 2015",
+                            Label = "Dream Catalogue",
+                            UserRating = 100,
+                            NumberOfTracks = 8,
+                            Genre = Enums.MusicGenreCategory.Ambient,
+                            GenreTwo = "Vaporwave",
+                            GenreThree = "Dreampunk",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/2814.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Everything Everything",
+                            AlbumName = "Get To Heaven",
+                            ReleaseDate = "June 15, 2015",
+                            Label = "RCA",
+                            UserRating = 100,
+                            NumberOfTracks = 11,
+                            Genre = Enums.MusicGenreCategory.Pop,
+                            GenreTwo = "Progressive Pop",
+                            GenreThree = "Indie Rock",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/GetToHeaven.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Conway the Machine",
+                            AlbumName = "God Don't Make Mistakes",
+                            ReleaseDate = "February 25, 2022",
+                            Label = "Shady",
+                            UserRating = 85,
+                            NumberOfTracks = 12,
+                            Genre = Enums.MusicGenreCategory.HipHop,
+                            GenreTwo = "Conscious Hip Hop",
+                            GenreThree = "Gansta Rap",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/GotDontMakeMistakes.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Hiroshi Yoshimura",
+                            AlbumName = "Green",
+                            ReleaseDate = "March 20, 1986",
+                            Label = "N/A",
+                            UserRating = 100,
+                            NumberOfTracks = 8,
+                            Genre = Enums.MusicGenreCategory.Ambient,
+                            GenreTwo = "New Age",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/Green.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Gram Parsons",
+                            AlbumName = "Grievous Angel",
+                            ReleaseDate = "January 1, 1974",
+                            Label = "Reprise",
+                            UserRating = 100,
+                            NumberOfTracks = 9,
+                            Genre = Enums.MusicGenreCategory.Country,
+                            GenreTwo = "Alternative Country",
+                            GenreThree = "Singer-Songwriter",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/Grevious.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Brian Eno & David Byrne",
+                            AlbumName = "My Life in the Bush of Ghosts",
+                            ReleaseDate = "February 1, 1981",
+                            Label = "Sire",
+                            UserRating = 100,
+                            NumberOfTracks = 11,
+                            Genre = Enums.MusicGenreCategory.Rock,
+                            GenreTwo = "Experimental Rock",
+                            GenreThree = "Art Rock",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/MyLifeBush.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Raekwon",
+                            AlbumName = "Only Built 4 Cuban Linx...",
+                            ReleaseDate = "August 1, 1995",
+                            Label = "Loud",
+                            UserRating = 100,
+                            NumberOfTracks = 18,
+                            Genre = Enums.MusicGenreCategory.HipHop,
+                            GenreTwo = "East Coast Hip Hop",
+                            GenreThree = "Boom Bap",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/OnlyBuilt.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Tim Hecker",
+                            AlbumName = "Ravedeath, 1972",
+                            ReleaseDate = "February 14, 2011",
+                            Label = "Kranky",
+                            UserRating = 85,
+                            NumberOfTracks = 12,
+                            Genre = Enums.MusicGenreCategory.Ambient,
+                            GenreTwo = "Drone",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/RaveDeath.jpg",
+
+                        },
+                        new MusicModel()
+                        {
+                            Artist = "Fuming Mouth",
+                            AlbumName = "The Grand Descent",
+                            ReleaseDate = "June 7, 2019",
+                            Label = "Triple-B Records",
+                            UserRating = 80,
+                            NumberOfTracks = 12,
+                            Genre = Enums.MusicGenreCategory.Metal,
+                            GenreTwo = "Death Metal",
+                            GenreThree = "Hardcore",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/TheGrandDe.jpg",
 
                         },
 
                     });
                     context.SaveChanges();
                 }
-                
-                
+
+                if (!context.Book.Any())
+                {
+                    context.Book.AddRange(new List<BookModel>()
+                    {
+                        new BookModel()
+                        {
+                            Title = "1491: New Revelations of the Americas Before Columbus",
+                            Description = "In this groundbreaking work of science, history, and archaeology, Charles C. Mann radically alters our understanding of the Americas before the arrival of Columbus in 1492.",
+                            Writer = "Charles C. Mann",
+                            UserRating = 90,
+                            ReleaseDate = "August 9, 2005",
+                            Genre = Enums.BookGenreCategory.NonFiction,
+                            GenreTwo = "History",
+                            GenreThree = "Anthropology",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/1491.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "A Confederacy of Dunces",
+                            Description = "A Confederacy of Dunces is a rambling, aimless, comedic novel centered on Ignatius J. Reilly, a buffoonish overweight man-child with poor fashion sense, worse social skills, and deplorable hygiene.",
+                            Writer = "John Kennedy Toole",
+                            UserRating = 80,
+                            ReleaseDate = "May 1, 1980",
+                            Genre = Enums.BookGenreCategory.Fiction,
+                            GenreTwo = "Humor",
+                            GenreThree = "Classics",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/Confed.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "Don Quixote",
+                            Description = "Don Quixote has become so entranced by reading chivalric romances that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray—he tilts at windmills, imagining them to be giants—Sancho acquires cunning and a certain sagacity.",
+                            Writer = "Miguel de Cervantes Saavedra",
+                            UserRating = 85,
+                            ReleaseDate = "January 1, 1605",
+                            Genre = Enums.BookGenreCategory.Fiction,
+                            GenreTwo = "Classics",
+                            GenreThree = "Spanish Literature",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/Don%20Quixote.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "Dune",
+                            Description = "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...",
+                            Writer = "Frank Herbert",
+                            UserRating = 91,
+                            ReleaseDate = "June 1, 1965",
+                            Genre = Enums.BookGenreCategory.SciFi,
+                            GenreTwo = "Fiction",
+                            GenreThree = "Fantasy",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/Dune.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "The Lies of Locke Lamora",
+                            Description = "An orphan’s life is harsh—and often short—in the mysterious island city of Camorr. But young Locke Lamora dodges death and slavery, becoming a thief under the tutelage of a gifted con artist. As leader of the band of light-fingered brothers known as the Gentleman Bastards, Locke is soon infamous, fooling even the underworld’s most feared ruler. But in the shadows lurks someone still more ambitious and deadly. Faced with a bloody coup that threatens to destroy everyone and everything that holds meaning in his mercenary life, Locke vows to beat the enemy at his own brutal game—or die trying.",
+                            Writer = "Scott Lynch",
+                            UserRating = 100,
+                            ReleaseDate = "June 1, 2006",
+                            Genre = Enums.BookGenreCategory.Fantasy,
+                            GenreTwo = "Fiction",
+                            GenreThree = "Adventure",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/LockeLamora.png",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "Meet Me in the Bathroom: Rebirth and Rock and Roll in New York City 2001-2011",
+                            Description = "An intriguing oral history of the post-9/11 decline of the old-guard music industry and rebirth of the New York rock scene, led by a group of iconoclastic rock bands.",
+                            Writer = "Lizzy Goodman",
+                            UserRating = 100,
+                            ReleaseDate = "May 23, 2017",
+                            Genre = Enums.BookGenreCategory.NonFiction,
+                            GenreTwo = "Music",
+                            GenreThree = "History",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/MeetMeIn.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "Trouble Boys: The True Story of the Replacements",
+                            Description = "Trouble Boys is the first definitive, no-holds-barred biography of one of the last great bands of the twentieth century: The Replacements. With full participation from reclusive singer and chief songwriter Paul Westerberg, bassist Tommy Stinson, guitarist Slim Dunlap, and the family of late band co-founder Bob Stinson, author Bob Mehr is able to tell the real story of this highly influential group, capturing their chaotic, tragic journey from the basements of Minneapolis to rock legend.",
+                            Writer = "Bob Mehr",
+                            UserRating = 100,
+                            ReleaseDate = "March 1, 2016",
+                            Genre = Enums.BookGenreCategory.NonFiction,
+                            GenreTwo = "Music",
+                            GenreThree = "History",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/Troubled%20Boys.jpg",
+                        },
+
+                        new BookModel()
+                        {
+                            Title = "Undaunted Courage: The Pioneering First Mission to Explore America's Wild Frontier",
+                            Description = "'This was much more than a bunch of guys out on an exploring and collecting expedition. This was a military expedition into hostile territory'.",
+                            Writer = "Stephen E. Ambrose",
+                            UserRating = 85,
+                            ReleaseDate = "February 15, 1996",
+                            Genre = Enums.BookGenreCategory.NonFiction,
+                            GenreTwo = "Biography",
+                            GenreThree = "History",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/Undaunted.jpg",
+                        },
+
+                         new BookModel()
+                        {
+                            Title = "The Crying of Lot 49",
+                            Description = "Suffused with rich satire, chaotic brilliance, verbal turbulence and wild humor, The Crying of Lot 49 opens as Oedipa Maas discovers that she has been made executrix of a former lover's estate.",
+                            Writer = "Thomas Pynchon",
+                            UserRating = 75,
+                            ReleaseDate = "January 1, 1966",
+                            Genre = Enums.BookGenreCategory.Fiction,
+                            GenreTwo = "Classics",
+                            GenreThree = "Novels",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/lot%2049.jpg",
+                        },
+
+                         new BookModel()
+                        {
+                            Title = "A People's History of the United States",
+                            Description = "In the book, Zinn presented a different side of history from the more traditional \"fundamental nationalist glorification of country\".",
+                            Writer = "Howard Zinn",
+                            UserRating = 91,
+                            ReleaseDate = "January 1, 1980",
+                            Genre = Enums.BookGenreCategory.NonFiction,
+                            GenreTwo = "History",
+                            GenreThree = "Politics",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/BookCovers/peoples%20histroy.jpg",
+                        },
+                    });
+                    context.SaveChanges();
+                }
+                if (!context.Televsion.Any())
+                {
+                    context.Televsion.AddRange(new List<TelevisionModel>()
+                    {
+                        new TelevisionModel()
+                        {
+                         
+                            Title = "Barry",
+                            Description = "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
+                            Stars = "Bill Hader, Stephen Root, Sarah Goldberg",
+                            UserRating = 84,
+                            YearStart = 2018,
+                            YearEnd = 2023,
+                            Seasons = 4,
+                            Genre = Enums.TelevisionGenreCategory.Action,
+                            GenreTwo = "Comedy",
+                            GenreThree = "Crime",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Barry.jpg",
+                        
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "I Think You Should Leave with Tim Robinson",
+                            Description = "In this new sketch show, Tim Robinson and his guests spend each segment driving someone to the point of needing--or desperately wanting--to leave.",
+                            Stars = "Tim Robinson, Sam Richardson, Patti Harrison",
+                            UserRating = 100,
+                            YearStart = 2019,
+                            Seasons = 3,
+                            Genre = Enums.TelevisionGenreCategory.Comedy,
+                            GenreTwo = "Sketch",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/IThinkYou.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Mad Men",
+                            Description = "A drama about one of New York's most prestigious ad agencies at the beginning of the 1960s, focusing on one of the firm's most mysterious but extremely talented ad executives, Donald Draper.",
+                            Stars = "Jon Hamm, Elisabeth Moss, Vincent Kartheiser",
+                            UserRating = 100,
+                            YearStart = 2007,
+                            YearEnd = 2015,
+                            Seasons = 7,
+                            Genre = Enums.TelevisionGenreCategory.Drama,
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/MadMen.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Midnight Mass",
+                            Description = "An isolated island community experiences miraculous events - and frightening omens - after the arrival of a charismatic, mysterious young priest.",
+                            Stars = "Kate Siegel, Zach Gilford, Kristin Lehman",
+                            UserRating = 77,
+                            YearStart = 2021,
+                            Seasons = 1,
+                            Genre = Enums.TelevisionGenreCategory.Horror,
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Midnight%20Mass.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Nathan for You",
+                            Description = "Nathan Fielder uses his business degree and life experiences to help real small businesses turn a profit. But because of his unorthodox approach, Nathan's genuine efforts to do good often draw real people into an experience far beyond what they signed up for.",
+                            Stars = "Nathan Fielder, Anthony Filosa, Michael Koman",
+                            UserRating = 95,
+                            YearStart = 2013,
+                            YearEnd = 2017,
+                            Seasons = 4,
+                            Genre = Enums.TelevisionGenreCategory.Comedy,
+                            GenreTwo = "Documentary",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Nathan.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Planet Earth",
+                            Description = "A documentary series on the wildlife found on Earth. Each episode covers a different habitat: deserts, mountains, deep oceans, shallow seas, forests, caves, polar regions, fresh water, plains and jungles. Narrated by David Attenborough.",
+                            Stars = "Sigourney Weaver, David Attenborough, Nikolay Drozdov",
+                            UserRating = 83,
+                            YearStart = 2006,
+                            Seasons = 1,
+                            Genre = Enums.TelevisionGenreCategory.Documentary,
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/PlanetEarth.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Better Call Saul",
+                            Description = "The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.",
+                            Stars = "Bob Odenkirk, Rhea Seehorn, Johnathan Banks",
+                            UserRating = 95,
+                            YearStart = 2015,
+                            YearEnd = 2022,
+                            Seasons = 6,
+                            Genre = Enums.TelevisionGenreCategory.Crime,
+                            GenreTwo = "Drama",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Saul.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "The Sopranos",
+                            Description = "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+                            Stars = "James Gandolfini, Lorraine Bracco, Edie Falco",
+                            UserRating = 100,
+                            YearStart = 1999,
+                            YearEnd = 2007,
+                            Seasons = 6,
+                            Genre = Enums.TelevisionGenreCategory.Crime,
+                            GenreTwo = "Drama",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Sopranos.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Succession",
+                            Description = "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company",
+                            Stars = "Nicholas Braun, Brian Cox, Kieran Culkin",
+                            UserRating = 90,
+                            YearStart = 2018,
+                            YearEnd = 2023,
+                            Seasons = 4,
+                            Genre = Enums.TelevisionGenreCategory.Drama,
+                            GenreTwo = "Comedy",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Succession.jpg",
+
+                        },
+
+                        new TelevisionModel()
+                        {
+
+                            Title = "Twin Peaks",
+                            Description = "An idiosyncratic FBI agent investigates the murder of a young woman in the even more idiosyncratic town of Twin Peaks.",
+                            Stars = "Kyle MacLachlan, Michael Ontkean, Madchen Amick",
+                            UserRating = 97,
+                            YearStart = 1990,
+                            YearEnd = 1991,
+                            Seasons = 2,
+                            Genre = Enums.TelevisionGenreCategory.Crime,
+                            GenreTwo = "Drama",
+                            GenreTwo = "Mystery",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Twin%20Peaks.jpg",
+
+                        },
+
+                    });
+                    context.SaveChanges();
+                }
+
             }
         }
     }

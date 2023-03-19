@@ -10,10 +10,6 @@ namespace MediaLibrarian.Models
         public string Title { get; set; }
         [Required]
         public string Stars { get; set; }
-        [Required]
-        public string Director { get; set; }
-        [Required]
-        public string Writer { get; set; }
         
         [Range(1.0, 10.0)]
         public float UserRating { get; set; }
@@ -23,7 +19,7 @@ namespace MediaLibrarian.Models
         public int YearStart { get; set; }
         public int? YearEnd { get; set; }
         [Required]
-        public string Seasons { get; set; }
+        public int Seasons { get; set; }
 
 
         [Required]
