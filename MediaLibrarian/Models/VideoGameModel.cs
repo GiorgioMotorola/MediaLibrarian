@@ -13,7 +13,7 @@ namespace MediaLibrarian.Models
         [Required]
         public string Description { get; set; }
         [Required]
-        public DateTime ReleaseDate { get; set; }
+        public string ReleaseDate { get; set; }
         [Required]
         public string Platform { get; set; }
         [Required]

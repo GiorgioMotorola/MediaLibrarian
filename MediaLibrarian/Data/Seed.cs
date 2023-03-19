@@ -670,7 +670,7 @@ namespace MediaLibrarian.Data
                             Seasons = 2,
                             Genre = Enums.TelevisionGenreCategory.Crime,
                             GenreTwo = "Drama",
-                            GenreTwo = "Mystery",
+                            GenreThree = "Mystery",
                             Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/TVShowPosters/Twin%20Peaks.jpg",
 
                         },
@@ -678,6 +678,178 @@ namespace MediaLibrarian.Data
                     });
                     context.SaveChanges();
                 }
+
+                if (!context.VideoGame.Any())
+                {
+                    context.VideoGame.AddRange(new List<VideoGameModel>()
+                    {
+                        
+                        new VideoGameModel()
+                        {
+                            Title = "Cities Skylines",
+                            Description = "Developed by Colossal Order, Cities: Skylines offers sprawling landscapes and maps with endless sandbox gameplay and new ways to expand your city. Key to progression is the ability to influence your city’s policy by incorporating taxation into districts. All this plus the ability to mod the game to suit your play style",
+                            Company = "Paradox Interactive",
+                            ReleaseDate = "Mar 10, 2015",
+                            Platform = "PC, PlayStation 4, Stadia, Switch, Xbox One",
+                            UserRating = 90,
+                            ESRB = Enums.ESRBRatingCategory.E,
+                            Genre = Enums.VideoGameGenreCategory.Strategy,
+                            GenreTwo = "City Building",
+                            GenreThree = "Government",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Cities%20Skylines.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Divinity: Original Sin II",
+                            Description = "Master deep, tactical combat. Join up to 3 other players - but know that only one of you will have the chance to become a God.",
+                            Company = "Larlan Studios Games",
+                            ReleaseDate = "Sep 14, 2017",
+                            Platform = "PC, PlayStation 4, Xbox One",
+                            UserRating = 93,
+                            ESRB = Enums.ESRBRatingCategory.M,
+                            Genre = Enums.VideoGameGenreCategory.RPG,
+                            GenreTwo = "Action RPG",
+                            GenreThree = "Western-Style",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Divinity.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Horizon Forbidden West",
+                            Description = "Join Aloy as she braves the Forbidden West – a majestic but dangerous frontier that conceals mysterious new threats. Explore distant lands, fight bigger and more awe-inspiring machines, and encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon. ",
+                            Company = "Playstation Studios",
+                            ReleaseDate = "Feb 18, 2022",
+                            Platform = "Playstation 5, PlayStation 4",
+                            UserRating = 88,
+                            ESRB = Enums.ESRBRatingCategory.T,
+                            Genre = Enums.VideoGameGenreCategory.RPG,
+                            GenreTwo = "Action Adventure",
+                            GenreThree = "Open World",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Horizon.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Super Mario 64",
+                            Description = "Mario is super in a whole new way! Combining the finest 3-D graphics ever developed for a video game and an explosive sound track, Super Mario 64 becomes a new standard for video games. It's packed with bruising battles, daunting obstacle courses and underwater adventures. Retrieve the Power Stars from their hidden locations and confront your arch nemesis - Bowser, King of the Koopas!",
+                            Company = "Nintendo",
+                            ReleaseDate = "Sep 26, 1996",
+                            Platform = "Nintendo 64",
+                            UserRating = 100,
+                            ESRB = Enums.ESRBRatingCategory.E,
+                            Genre = Enums.VideoGameGenreCategory.Platformer,
+                            GenreTwo = "Action",
+                            GenreThree = "3D",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Mario%2064.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Monkey Island 2: LeChuck's Revenge",
+                            Description = "More Pirates! More Adventure! More Monkeys! Relive the second swashbuckling misadventure of the wannabe pirate Guybrush Threepwood as he searches for the lost treasure of Big Whoop, attempts to win back the beautiful Elaine Marley and takes on the now evil zombie pirate, LeChuck!",
+                            Company = "LucasArts",
+                            ReleaseDate = "Dec 1, 1991",
+                            Platform = "PC",
+                            UserRating = 100,
+                            ESRB = Enums.ESRBRatingCategory.E,
+                            Genre = Enums.VideoGameGenreCategory.Adventure,
+                            GenreTwo = "Point and Click",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Monkey.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Monkey Island 2: LeChuck's Revenge",
+                            Description = "More Pirates! More Adventure! More Monkeys! Relive the second swashbuckling misadventure of the wannabe pirate Guybrush Threepwood as he searches for the lost treasure of Big Whoop, attempts to win back the beautiful Elaine Marley and takes on the now evil zombie pirate, LeChuck!",
+                            Company = "LucasArts",
+                            ReleaseDate = "Dec 1, 1991",
+                            Platform = "PC",
+                            UserRating = 100,
+                            ESRB = Enums.ESRBRatingCategory.E,
+                            Genre = Enums.VideoGameGenreCategory.Adventure,
+                            GenreTwo = "Point and Click",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Monkey.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Outer Wilds",
+                            Description = "An open world mystery about a solar system trapped in an endless time loop. As the newest recruit in the Space Program of Outer Wilds Ventures, a fledgling space program searching for answers in a strange, constantly evolving solar system, you’ll have to discover what lurks in the heart of the ominous Dark Bramble and to see if the endless time loop can be stopped.",
+                            Company = "Annapurna Interactive",
+                            ReleaseDate = "May 30, 2019",
+                            Platform = "Xbox One, PC, Playstation 4, Playstation 5, Xbox Series X",
+                            UserRating = 100,
+                            ESRB = Enums.ESRBRatingCategory.T,
+                            Genre = Enums.VideoGameGenreCategory.Adventure,
+                            GenreTwo = "Action",
+                            GenreThree = "Open World",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/OuterWilds.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "PGA Tour 2K21",
+                            Description = "Play against the pros. Play with your crew. In PGA TOUR 2K21, you can play by the rules or create your own. ",
+                            Company = "2K Games",
+                            ReleaseDate = "Aug 21, 2020",
+                            Platform = "Xbox One, PC, Playstation 4, Swith, Stadia",
+                            UserRating = 70,
+                            ESRB = Enums.ESRBRatingCategory.E,
+                            Genre = Enums.VideoGameGenreCategory.Sports,
+                            GenreTwo = "Golf Sim",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/PGA.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Red Dead Redemption 2",
+                            Description = "America, 1899. The end of the Wild West era has begun. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang has to rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal fissures threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang that raised him.",
+                            Company = "Rockstar Games",
+                            ReleaseDate = "Oct 26, 2018",
+                            Platform = "Xbox One, PC, Playstation 4, Stadia",
+                            UserRating = 95,
+                            ESRB = Enums.ESRBRatingCategory.M,
+                            Genre = Enums.VideoGameGenreCategory.Adventure,
+                            GenreTwo = "Action",
+                            GenreThree = "Open World",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Read%20Dead%202.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Vampire Survivors",
+                            Description = "Mow thousands of night creatures and survive until dawn!",
+                            Company = "poncle",
+                            ReleaseDate = "Dec 8, 2022",
+                            Platform = "PC, IOS, Xbox One, Xbox Series X",
+                            UserRating = 90,
+                            ESRB = Enums.ESRBRatingCategory.NA,
+                            Genre = Enums.VideoGameGenreCategory.Action,
+                            GenreTwo = "Shooter",
+                            GenreThree = "Roguelike",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Vampire.jpg",
+                        },
+
+                        new VideoGameModel()
+                        {
+                            Title = "Stardew Valley",
+                            Description = "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won't be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town's most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness.",
+                            Company = "Concerned Ape",
+                            ReleaseDate = "Oct 5, 2017",
+                            Platform = "PC, iPhone/iPad, PC, PlayStation 4, PlayStation Vita, Xbox One",
+                            UserRating = 100,
+                            ESRB = Enums.ESRBRatingCategory.T,
+                            Genre = Enums.VideoGameGenreCategory.RPG,
+                            GenreTwo = "Farming Sim",
+                            GenreThree = "Life Sim",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/stardew.jpg",
+                        },
+
+                    });
+                    context.SaveChanges();
+                }
+
 
             }
         }
