@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MediaLibrarian.Models.TelevisionModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div class="card mb-3" style="max-width: 1300px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+
+                <br><br> <img src="@item.Image" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <p class="card-text"><u>Starring:</u> @item.Stars <br> <u>Release Date:</u> @item.Seasons <br> <u>Label:</u> @item.UserRating</p>
+                    <p class="card-text">@item.Description</p>
+                    <p class="card-text"><small class="text-muted">@item.Genre || @item.GenreTwo || @item.GenreThree</small></p>
+                    <br>
+                    @*<a href="Movies/Details/@item.Id" class="btn btn-outline-success">View Movie</a>*@
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="btn btn-warning" href="TelevisionModels/Details/@item.Id" role="button">View TV Show</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

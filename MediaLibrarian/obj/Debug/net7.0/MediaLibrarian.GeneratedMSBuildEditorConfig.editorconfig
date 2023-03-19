@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\downw\Desktop\projects\MediaLibrarian\MediaLibrarian
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/BookModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va01vZGVsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/BookModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va01vZGVsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/BookModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va01vZGVsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/BookModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va01vZGVsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/BookModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va01vZGVsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -24,12 +44,92 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MovieModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MovieModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MovieModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MovieModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MovieModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MusicModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MusicModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNNb2RlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MusicModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNNb2RlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MusicModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNNb2RlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/MusicModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNNb2RlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/TelevisionModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZXZpc2lvbk1vZGVsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/TelevisionModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZXZpc2lvbk1vZGVsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/TelevisionModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZXZpc2lvbk1vZGVsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/TelevisionModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZXZpc2lvbk1vZGVsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/TelevisionModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVsZXZpc2lvbk1vZGVsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/VideoGameModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9HYW1lTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/VideoGameModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9HYW1lTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/VideoGameModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9HYW1lTW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/VideoGameModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9HYW1lTW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/VideoGameModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlkZW9HYW1lTW9kZWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/downw/Desktop/projects/MediaLibrarian/MediaLibrarian/Views/_ViewImports.cshtml]

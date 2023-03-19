@@ -744,19 +744,6 @@ namespace MediaLibrarian.Data
                             Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Mario%2064.jpg",
                         },
 
-                        new VideoGameModel()
-                        {
-                            Title = "Monkey Island 2: LeChuck's Revenge",
-                            Description = "More Pirates! More Adventure! More Monkeys! Relive the second swashbuckling misadventure of the wannabe pirate Guybrush Threepwood as he searches for the lost treasure of Big Whoop, attempts to win back the beautiful Elaine Marley and takes on the now evil zombie pirate, LeChuck!",
-                            Company = "LucasArts",
-                            ReleaseDate = "Dec 1, 1991",
-                            Platform = "PC",
-                            UserRating = 100,
-                            ESRB = Enums.ESRBRatingCategory.E,
-                            Genre = Enums.VideoGameGenreCategory.Adventure,
-                            GenreTwo = "Point and Click",
-                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/VideoGameCovers/Monkey.jpg",
-                        },
 
                         new VideoGameModel()
                         {
@@ -765,7 +752,7 @@ namespace MediaLibrarian.Data
                             Company = "LucasArts",
                             ReleaseDate = "Dec 1, 1991",
                             Platform = "PC",
-                            UserRating = 100,
+                            UserRating = 90,
                             ESRB = Enums.ESRBRatingCategory.E,
                             Genre = Enums.VideoGameGenreCategory.Adventure,
                             GenreTwo = "Point and Click",

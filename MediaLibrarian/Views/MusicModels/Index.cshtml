@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MediaLibrarian.Models.MusicModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@foreach (var item in Model)
+{
+    <div class="card mb-3" style="max-width: 1300px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+
+                <br><br> <img src="@item.Image" class="rounded mx-auto d-block" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Artist</h5>
+                    <p class="card-text"><u>Album Name:</u> @item.AlbumName <br> <u>Release Date:</u> @item.ReleaseDate <br> <u>Label:</u> @item.Label</p>
+                    <p class="card-text">@item.UserRating</p>
+                    <p class="card-text"><small class="text-muted">@item.Genre || @item.GenreTwo || @item.GenreThree</small></p>
+                    <br>
+                    @*<a href="Movies/Details/@item.Id" class="btn btn-outline-success">View Movie</a>*@
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a class="btn btn-warning" href="MusicModels/Details/@item.Id" role="button">View Album</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
