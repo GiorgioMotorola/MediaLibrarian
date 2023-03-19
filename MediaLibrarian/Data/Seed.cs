@@ -224,17 +224,33 @@ namespace MediaLibrarian.Data
                     {
                         new MusicModel()
                         {
-                            Artist = "FleetWood Mac",
+                            Artist = "Fleetwood Mac",
                             AlbumName = "Tusk",
                             ReleaseDate = "October 12, 1979",
                             Label = "Warner Bros",
                             UserRating = 100,
+                            NumberOfTracks = 20,
                             Genre = Enums.MusicGenreCategory.Rock,
                             GenreTwo = "AOR",
                             Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/Tusk.jpg",
 
-                            },
-                       
+                        },
+
+                        new MusicModel()
+                        {
+                            Artist = "The Replacements",
+                            AlbumName = "Let It Be",
+                            ReleaseDate = "October 2, 1984",
+                            Label = "Twin/Tone",
+                            UserRating = 100,
+                            NumberOfTracks = 11,
+                            Genre = Enums.MusicGenreCategory.Rock,
+                            GenreTwo = "Alternative Rock",
+                            GenreThree = "Punk",
+                            Image = "https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/Tusk.jpg",
+
+                        },
+
                     });
                     context.SaveChanges();
                 }

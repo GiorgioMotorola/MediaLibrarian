@@ -1,5 +1,7 @@
 ﻿using MediaLibrarian.Enums;
+using Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MediaLibrarian.Models
 {
@@ -18,6 +20,7 @@ namespace MediaLibrarian.Models
         [Required]
         [Range(0, 100)]
         public int UserRating { get; set; }
+        public int NumberOfTracks { get; set; }
 
 
         [Required]
@@ -26,5 +29,6 @@ namespace MediaLibrarian.Models
         public string? GenreThree { get; set; }
         [Required]
         public string Image { get; set; }
+        
     }
 }
