@@ -62,7 +62,7 @@ namespace MediaLibrarian.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Book");
+                    b.ToTable("TV");
                 });
 
             modelBuilder.Entity("MediaLibrarian.Models.MovieModel", b =>

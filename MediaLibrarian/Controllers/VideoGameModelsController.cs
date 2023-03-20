@@ -160,5 +160,28 @@ namespace MediaLibrarian.Controllers
         {
           return (_context.VideoGame?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.VideoGame == null)
+            {
+                return Problem("No Results Found");
+            }
+
+            var vg = from m in _context.VideoGame
+                     select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                vg = vg.Where(s => s.Platform!.Contains(searchString)
+                || s.Title!.Contains(searchString)
+                || s.GenreThree!.Contains(searchString) || s.GenreTwo!.Contains(searchString)
+                || s.Description!.Contains(searchString));
+            }
+
+
+            return View(await vg.ToListAsync());
+        }
     }
 }

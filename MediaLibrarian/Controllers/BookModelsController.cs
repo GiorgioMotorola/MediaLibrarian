@@ -24,7 +24,7 @@ namespace MediaLibrarian.Controllers
         {
               return _context.Book != null ? 
                           View(await _context.Book.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.Book'  is null.");
+                          Problem("Entity set 'AppDbContext.TV'  is null.");
         }
 
         // GET: BookModels/Details/5
@@ -144,7 +144,7 @@ namespace MediaLibrarian.Controllers
         {
             if (_context.Book == null)
             {
-                return Problem("Entity set 'AppDbContext.Book'  is null.");
+                return Problem("Entity set 'AppDbContext.TV'  is null.");
             }
             var bookModel = await _context.Book.FindAsync(id);
             if (bookModel != null)
@@ -159,6 +159,29 @@ namespace MediaLibrarian.Controllers
         private bool BookModelExists(Guid id)
         {
           return (_context.Book?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Book == null)
+            {
+                return Problem("No Results Found");
+            }
+
+            var book = from m in _context.Book
+                        select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                book = book.Where(s => s.Writer!.Contains(searchString)
+                || s.Title!.Contains(searchString)
+                || s.GenreThree!.Contains(searchString) || s.GenreTwo!.Contains(searchString)
+                || s.ReleaseDate!.Contains(searchString));
+            }
+
+
+            return View(await book.ToListAsync());
         }
     }
 }

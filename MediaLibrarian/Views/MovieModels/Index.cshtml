@@ -3,7 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<br>
+<form class="d-flex" role="search" asp-controller="MovieModels" asp-action="Index">
+    <input class="form-control me-2" type="text" name="searchString" placeholder="Search Movies" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<br>
 @foreach (var item in Model)
 {
     <div class="card mb-3" style="max-width: 1300px;">
@@ -28,3 +33,4 @@
         </div>
     </div>
     }
+

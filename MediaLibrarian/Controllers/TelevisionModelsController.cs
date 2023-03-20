@@ -160,5 +160,28 @@ namespace MediaLibrarian.Controllers
         {
           return (_context.Televsion?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Televsion == null)
+            {
+                return Problem("No Results Found");
+            }
+
+            var tv = from m in _context.Televsion
+                       select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                tv = tv.Where(s => s.Stars!.Contains(searchString)
+                || s.Title!.Contains(searchString)
+                || s.GenreThree!.Contains(searchString) || s.GenreTwo!.Contains(searchString)
+                || s.Description!.Contains(searchString));
+            }
+
+
+            return View(await tv.ToListAsync());
+        }
     }
 }

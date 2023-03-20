@@ -12,7 +12,7 @@ namespace MediaLibrarian.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Book",
+                name: "TV",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -126,7 +126,7 @@ namespace MediaLibrarian.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Book");
+                name: "TV");
 
             migrationBuilder.DropTable(
                 name: "Movie");
