@@ -19,7 +19,7 @@ namespace MediaLibrarian.Controllers
             _context = context;
         }
 
-        // GET: MovieModels
+        
         public async Task<IActionResult> Index()
         {
               return _context.Movie != null ? 
@@ -27,7 +27,7 @@ namespace MediaLibrarian.Controllers
                           Problem("Entity set 'AppDbContext.Movie'  is null.");
         }
 
-        // GET: MovieModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Movie == null)
@@ -45,15 +45,13 @@ namespace MediaLibrarian.Controllers
             return View(movieModel);
         }
 
-        // GET: MovieModels/Create
+        
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: MovieModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Stars,Director,Writer,UserRating,Description,MPAA,RunTimeHours,RunTimeMinutes,ReleaseDate,Genre,GenreTwo,GenreThree,Image")] MovieModel movieModel)
@@ -68,7 +66,7 @@ namespace MediaLibrarian.Controllers
             return View(movieModel);
         }
 
-        // GET: MovieModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.Movie == null)
@@ -84,9 +82,7 @@ namespace MediaLibrarian.Controllers
             return View(movieModel);
         }
 
-        // POST: MovieModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Stars,Director,Writer,UserRating,Description,MPAA,RunTimeHours,RunTimeMinutes,ReleaseDate,Genre,GenreTwo,GenreThree,Image")] MovieModel movieModel)
@@ -119,7 +115,7 @@ namespace MediaLibrarian.Controllers
             return View(movieModel);
         }
 
-        // GET: MovieModels/Delete/5
+       
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.Movie == null)
@@ -137,14 +133,14 @@ namespace MediaLibrarian.Controllers
             return View(movieModel);
         }
 
-        // POST: MovieModels/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.Movie == null)
             {
-                return Problem("Entity set 'AppDbContext.Movie'  is null.");
+                return Problem("No Results Found");
             }
             var movieModel = await _context.Movie.FindAsync(id);
             if (movieModel != null)

@@ -19,7 +19,7 @@ namespace MediaLibrarian.Controllers
             _context = context;
         }
 
-        // GET: MusicModels
+        
         public async Task<IActionResult> Index()
         {
               return _context.Music != null ? 
@@ -27,7 +27,7 @@ namespace MediaLibrarian.Controllers
                           Problem("Entity set 'AppDbContext.Music'  is null.");
         }
 
-        // GET: MusicModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Music == null)
@@ -45,15 +45,13 @@ namespace MediaLibrarian.Controllers
             return View(musicModel);
         }
 
-        // GET: MusicModels/Create
+        
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: MusicModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Artist,AlbumName,ReleaseDate,Label,UserRating,NumberOfTracks,Genre,GenreTwo,GenreThree,Image")] MusicModel musicModel)
@@ -68,7 +66,7 @@ namespace MediaLibrarian.Controllers
             return View(musicModel);
         }
 
-        // GET: MusicModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.Music == null)
@@ -84,9 +82,7 @@ namespace MediaLibrarian.Controllers
             return View(musicModel);
         }
 
-        // POST: MusicModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Artist,AlbumName,ReleaseDate,Label,UserRating,NumberOfTracks,Genre,GenreTwo,GenreThree,Image")] MusicModel musicModel)
@@ -119,7 +115,7 @@ namespace MediaLibrarian.Controllers
             return View(musicModel);
         }
 
-        // GET: MusicModels/Delete/5
+        
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.Music == null)
@@ -137,14 +133,14 @@ namespace MediaLibrarian.Controllers
             return View(musicModel);
         }
 
-        // POST: MusicModels/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.Music == null)
             {
-                return Problem("Entity set 'AppDbContext.Music'  is null.");
+                return Problem("No Results Found");
             }
             var musicModel = await _context.Music.FindAsync(id);
             if (musicModel != null)

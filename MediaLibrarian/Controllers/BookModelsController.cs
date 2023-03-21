@@ -19,7 +19,7 @@ namespace MediaLibrarian.Controllers
             _context = context;
         }
 
-        // GET: BookModels
+        
         public async Task<IActionResult> Index()
         {
               return _context.Book != null ? 
@@ -27,7 +27,7 @@ namespace MediaLibrarian.Controllers
                           Problem("Entity set 'AppDbContext.TV'  is null.");
         }
 
-        // GET: BookModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Book == null)
@@ -45,15 +45,13 @@ namespace MediaLibrarian.Controllers
             return View(bookModel);
         }
 
-        // GET: BookModels/Create
+        
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: BookModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Description,Writer,UserRating,ReleaseDate,Genre,GenreTwo,GenreThree,Image")] BookModel bookModel)
@@ -68,7 +66,7 @@ namespace MediaLibrarian.Controllers
             return View(bookModel);
         }
 
-        // GET: BookModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.Book == null)
@@ -84,9 +82,7 @@ namespace MediaLibrarian.Controllers
             return View(bookModel);
         }
 
-        // POST: BookModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Description,Writer,UserRating,ReleaseDate,Genre,GenreTwo,GenreThree,Image")] BookModel bookModel)
@@ -119,7 +115,7 @@ namespace MediaLibrarian.Controllers
             return View(bookModel);
         }
 
-        // GET: BookModels/Delete/5
+        
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.Book == null)
@@ -137,14 +133,14 @@ namespace MediaLibrarian.Controllers
             return View(bookModel);
         }
 
-        // POST: BookModels/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.Book == null)
             {
-                return Problem("Entity set 'AppDbContext.TV'  is null.");
+                return Problem("No Results Found");
             }
             var bookModel = await _context.Book.FindAsync(id);
             if (bookModel != null)

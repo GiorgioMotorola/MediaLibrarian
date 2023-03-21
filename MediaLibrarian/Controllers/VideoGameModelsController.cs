@@ -19,7 +19,7 @@ namespace MediaLibrarian.Controllers
             _context = context;
         }
 
-        // GET: VideoGameModels
+        
         public async Task<IActionResult> Index()
         {
               return _context.VideoGame != null ? 
@@ -27,7 +27,7 @@ namespace MediaLibrarian.Controllers
                           Problem("Entity set 'AppDbContext.VideoGame'  is null.");
         }
 
-        // GET: VideoGameModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.VideoGame == null)
@@ -45,15 +45,13 @@ namespace MediaLibrarian.Controllers
             return View(videoGameModel);
         }
 
-        // GET: VideoGameModels/Create
+       
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: VideoGameModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Company,Description,ReleaseDate,Platform,UserRating,ESRB,Genre,GenreTwo,GenreThree,Image")] VideoGameModel videoGameModel)
@@ -68,7 +66,7 @@ namespace MediaLibrarian.Controllers
             return View(videoGameModel);
         }
 
-        // GET: VideoGameModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.VideoGame == null)
@@ -84,9 +82,7 @@ namespace MediaLibrarian.Controllers
             return View(videoGameModel);
         }
 
-        // POST: VideoGameModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Company,Description,ReleaseDate,Platform,UserRating,ESRB,Genre,GenreTwo,GenreThree,Image")] VideoGameModel videoGameModel)
@@ -119,7 +115,7 @@ namespace MediaLibrarian.Controllers
             return View(videoGameModel);
         }
 
-        // GET: VideoGameModels/Delete/5
+        
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.VideoGame == null)
@@ -137,14 +133,14 @@ namespace MediaLibrarian.Controllers
             return View(videoGameModel);
         }
 
-        // POST: VideoGameModels/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.VideoGame == null)
             {
-                return Problem("Entity set 'AppDbContext.VideoGame'  is null.");
+                return Problem("No Results Found");
             }
             var videoGameModel = await _context.VideoGame.FindAsync(id);
             if (videoGameModel != null)
@@ -179,7 +175,6 @@ namespace MediaLibrarian.Controllers
                 || s.GenreThree!.Contains(searchString) || s.GenreTwo!.Contains(searchString)
                 || s.Description!.Contains(searchString));
             }
-
 
             return View(await vg.ToListAsync());
         }

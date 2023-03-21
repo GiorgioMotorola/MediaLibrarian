@@ -19,7 +19,7 @@ namespace MediaLibrarian.Controllers
             _context = context;
         }
 
-        // GET: TelevisionModels
+        
         public async Task<IActionResult> Index()
         {
               return _context.Televsion != null ? 
@@ -27,7 +27,7 @@ namespace MediaLibrarian.Controllers
                           Problem("Entity set 'AppDbContext.Televsion'  is null.");
         }
 
-        // GET: TelevisionModels/Details/5
+        
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null || _context.Televsion == null)
@@ -45,15 +45,13 @@ namespace MediaLibrarian.Controllers
             return View(televisionModel);
         }
 
-        // GET: TelevisionModels/Create
+        
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: TelevisionModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Title,Stars,UserRating,Description,YearStart,YearEnd,Seasons,Genre,GenreTwo,GenreThree,Image")] TelevisionModel televisionModel)
@@ -68,7 +66,7 @@ namespace MediaLibrarian.Controllers
             return View(televisionModel);
         }
 
-        // GET: TelevisionModels/Edit/5
+        
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.Televsion == null)
@@ -84,9 +82,7 @@ namespace MediaLibrarian.Controllers
             return View(televisionModel);
         }
 
-        // POST: TelevisionModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Stars,UserRating,Description,YearStart,YearEnd,Seasons,Genre,GenreTwo,GenreThree,Image")] TelevisionModel televisionModel)
@@ -119,7 +115,7 @@ namespace MediaLibrarian.Controllers
             return View(televisionModel);
         }
 
-        // GET: TelevisionModels/Delete/5
+        
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.Televsion == null)
@@ -137,14 +133,14 @@ namespace MediaLibrarian.Controllers
             return View(televisionModel);
         }
 
-        // POST: TelevisionModels/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             if (_context.Televsion == null)
             {
-                return Problem("Entity set 'AppDbContext.Televsion'  is null.");
+                return Problem("No Results Found");
             }
             var televisionModel = await _context.Televsion.FindAsync(id);
             if (televisionModel != null)
@@ -179,7 +175,6 @@ namespace MediaLibrarian.Controllers
                 || s.GenreThree!.Contains(searchString) || s.GenreTwo!.Contains(searchString)
                 || s.Description!.Contains(searchString));
             }
-
 
             return View(await tv.ToListAsync());
         }

@@ -52,6 +52,40 @@
                         
                     </ul>
 
+                    <!-- Bootstrap CSS -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-3q3zxdVn1u91tsTF1c7VH4Px4kl4nwVpVoJ5Y5Zucd5I5L5SFT0wimDgW8J/SOkf+RzCfsuEdtAJJY9Zbq3+BQ==" crossorigin="anonymous" />
+
+                    <!-- Bootstrap JavaScript -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-5Wb8uz1NlCik6E39vLSSC1ZlXJ6U+nP6UzKNvnOoLUnOtJeK1GpjO37yE6vCJY+2Q6pijU6rHGLwvAn0Wkvg8Q==" crossorigin="anonymous"></script>
+
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">Create New</button>
+                    
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Please Select Below:
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-primary" asp-area="" asp-controller="MovieModels" asp-action="Create">Movie</a>
+                                    <a class="btn btn-primary" asp-area="" asp-controller="MusicModels" asp-action="Create">Album</a>
+                                    <a class="btn btn-primary" asp-area="" asp-controller="TelevisionModels" asp-action="Create">TV Show</a>
+                                    <a class="btn btn-primary" asp-area="" asp-controller="VideoGameModels" asp-action="Create">Game</a>
+                                    <a class="btn btn-primary" asp-area="" asp-controller="BookModels" asp-action="Create">Book</a>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                     @*<form class="d-flex" role="search" asp-controller="MovieModels" asp-action="Index">
                         <input class="form-control me-2" type="text" name="searchString" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
