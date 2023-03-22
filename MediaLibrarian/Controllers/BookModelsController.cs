@@ -7,9 +7,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MediaLibrarian.Data;
 using MediaLibrarian.Models;
+using System.Numerics;
 
 namespace MediaLibrarian.Controllers
 {
+    // This code follows the Dependency Inversion Principle (DIP).
+    // The DIP states that high-level modules should not depend on low-level modules
+    // but instead, they should both depend on abstractions. In this case, the BookModelsController is a high-level module, and the AppDbContext
+    // is a low-level module. Instead of depending directly on the AppDbContext, the BookModelsController depends on an abstraction of it.
+    //By injecting the AppDbContext through the constructor, the BookModelsController is not tightly coupled to a specific implementation
+    //of the AppDbContext.This makes the controller easier to test, maintain,
+    //and swap out the implementation of the AppDbContext without having to change the BookModelsController class.
     public class BookModelsController : Controller
     {
         private readonly AppDbContext _context;
@@ -157,6 +165,11 @@ namespace MediaLibrarian.Controllers
           return (_context.Book?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
+
+        //The Following code follows the Single Responsibility Principle (SRP).
+        //This method does not violate the SRP because it only performs one task
+        //which is to retrieve and filter data based on a user input. 
+        //It does not have any other responsibilities. 
         [HttpPost]
         public async Task<IActionResult> Index(string searchString)
         {
