@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MediaLibrarian.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230319210732_initialcreate")]
-    partial class initialcreate
+    [Migration("20230323000536_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,7 +65,7 @@ namespace MediaLibrarian.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TV");
+                    b.ToTable("Book");
                 });
 
             modelBuilder.Entity("MediaLibrarian.Models.MovieModel", b =>

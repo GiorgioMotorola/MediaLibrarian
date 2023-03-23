@@ -32,7 +32,7 @@ namespace MediaLibrarian.Controllers
         {
               return _context.Book != null ? 
                           View(await _context.Book.ToListAsync()) :
-                          Problem("Entity set 'AppDbContext.TV'  is null.");
+                          Problem("Entity set 'AppDbContext.Book'  is null.");
         }
 
         
