@@ -21,10 +21,8 @@ namespace MediaLibrarian.Models
         [Required]
         public string Description { get; set; }
         [Required]
-        public MPAARatingCategory MPAA { get; set; }
-        [MaxLength(2)]
-        public int RunTimeHours { get; set; }
-        [MaxLength(2)]
+        public MPAARatingCategory MPAA { get; set; }       
+        public int RunTimeHours { get; set; } 
         public int RunTimeMinutes { get; set; }
         [Required]
         public string ReleaseDate { get; set; }
