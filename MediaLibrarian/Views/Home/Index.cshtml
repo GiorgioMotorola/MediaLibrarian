@@ -1,60 +1,57 @@
-﻿@{
+﻿@using MediaLibrarian.Models
+
+@{
     ViewData["Title"] = "Home Page";
 }
-@*
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <br><br><br>
-    <div class="carousel-item active">
-            <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Movie.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-            <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Music.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-            <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Game.jpg" class="d-block w-100" alt="...">
-    </div>
-        <div class="carousel-item">
-            <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/TV.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Books.jpg" class="d-block w-100" alt="...">
-      </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>*@
+
 <br>
 <br>
 <br>
 <div class="card-group text-center">
-    <div class="card border-5">
-        <img src="https://cdn.discordapp.com/attachments/918536312204722178/1089678630000541796/Movie.jpg" class="card-img-top" alt="...">
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Movie.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title ">JAWS</h5>
-              <a href="MovieModels/Index" class="btn btn-warning">Go To Movies</a>
+              <a href="MovieModels" class="btn btn-warning">Go To Movies</a>
         </div>
     </div>
-   <div class="card border-5">
-        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/AlbumCovers/OnlyBuilt.jpg" class="card-img-top" alt="...">
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Music.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title ">BEFORE SUNSET</h5>
-            <a href="MusicModels/Index" class="btn btn-warning">Go To Music</a>
+            <h5 class="card-title ">THE REPLACEMENTS</h5>
+            <a href="MusicModels" class="btn btn-warning">Go To Music</a>
         </div>
     </div>
-   <div class="card border-5">
-        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/MoviePosters/Before%20Sunset.png" class="card-img-top" alt="...">
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Game.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title ">BEFORE SUNSET</h5>
-            <a href="MovieModels/Index" class="btn btn-warning">Go To Movies</a>
+            <h5 class="card-title ">OUTER WILDS</h5>
+            <a href="VideoGameModels" class="btn btn-warning">Go To Games</a>
         </div>
     </div>
 </div>
 
+<div class="card-group text-center">
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/TV.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title ">I THINK YOU SHOULD LEAVE</h5>
+            <a href="TelevisionModels" class="btn btn-warning">Go To TV</a>
+        </div>
+    </div>
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Books.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title ">DON QUIXOTE</h5>
+            <a href="BookModels" class="btn btn-warning">Go To Books</a>
+        </div>
+    </div>
+    <div class="card border-5 border-secondary">
+        <img src="https://raw.githubusercontent.com/GiorgioMotorola/MediaLibrarian/master/MediaLibrarian/Images/Carousel/Game2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title ">HORIZON FORBIDDEN WEST</h5>
+            <a href="VideoGameModels" class="btn btn-warning">Go To Games</a>
+        </div>
+    </div>
+</div>
 

@@ -16,6 +16,7 @@ namespace MediaLibrarian.Models
         public string Writer { get; set; }
         [Required]
         [Range(0, 100)]
+        [Display(Name = "User Rating")]
         public int UserRating { get; set; }
         [Required]
         public string Description { get; set; }

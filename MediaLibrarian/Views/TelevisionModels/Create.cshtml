@@ -1,4 +1,5 @@
 ﻿@model MediaLibrarian.Models.TelevisionModel
+@using MediaLibrarian.Enums
 
 @{
     ViewData["Title"] = "Create";
@@ -45,8 +46,10 @@
                 <span asp-validation-for="Seasons" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Genre" class="control-label"></label>
-                <select asp-for="Genre" class="form-control"></select>
+                <label asp-for="Genre">Genre</label>
+                <select asp-for="Genre" asp-items="@Html.GetEnumSelectList<TelevisionGenreCategory>()">
+                    <option>--Select--</option>
+                </select>
                 <span asp-validation-for="Genre" class="text-danger"></span>
             </div>
             <div class="form-group">
