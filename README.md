@@ -31,8 +31,7 @@ Step One: In "appsettings.json", add your connection string:
 Step Two: Use the Package Manager Console to Update-Database:
 ![image](https://user-images.githubusercontent.com/97712526/228086085-3773d3fc-3890-46c1-a375-0280dd6f43fe.png)
 
-Step Three (Optional): There is Seed Data ready to be added to your SQL Db. If you would like to add this data, 
-open Powershell and enter the following: 
+Step Three (Optional): There is Seed Data ready to be added to your SQL Db. If you would like to add this data,  pen Powershell and enter: 
 ![image](https://user-images.githubusercontent.com/97712526/228086339-b5e2a8cc-bf4a-47e2-ae46-b6c21e54f8f4.png)
 
 
